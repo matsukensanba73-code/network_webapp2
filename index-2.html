@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NETWORK LAB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div><h1>NETWORK LAB</h1><p>ネットワークをつくって、つないで、確かめる</p></div>
+  <nav id="modes">
+    <button data-m="learn">学習モード</button>
+    <button data-m="trouble">トラブルシューティング</button>
+    <button data-m="free">自由構築</button>
+  </nav>
+</header>
+<section id="mission"></section>
+<main>
+  <aside id="pal">
+    <h3>デバイス</h3>
+    <button data-t="pc">PC</button>
+    <button data-t="sw">スイッチ</button>
+    <button data-t="rt">ルータ</button>
+    <button data-t="sv">Webサーバ</button>
+    <button data-t="net">インターネット</button>
+    <button id="conn" class="alt">接続モード：OFF</button>
+    <p class="mute">クリックで追加。機器はドラッグで移動。接続モードで2台を順にクリックすると線でつながります（もう一度で解除）。</p>
+  </aside>
+  <div id="cv"></div>
+  <aside id="panel"></aside>
+</main>
+<footer id="bar">
+  <div class="ctl">
+    <label>通信元<select id="src"></select></label>
+    <span class="arrow">→</span>
+    <label>通信先<select id="dst"></select></label>
+    <button id="go" class="pri">通信テスト</button>
+    <button id="hint">ヒント</button>
+    <button id="again">もう一度見る</button>
+  </div>
+  <div id="res"></div>
+  <div id="hb"></div>
+</footer>
+<div id="fin" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
